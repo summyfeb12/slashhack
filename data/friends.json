@@ -8,26 +8,27 @@
           "name": "Engineering",
           "children": [
             {
-              "title": "Director",
-              "name": "Bryan O'Sullivan",
               "fb": "bryan.osullivan",
-              "size": 1164.7585470764989
+              "title": "Director",
+              "photo": "https://www.facebook.com/photo.php?fbid=10153210826061094&set=a.440993296093.224463.645786093&type=3&theater",
+              "name": "Bryan O'Sullivan",
+              "size": 1597.6527950328311
             },
             {
-              "name": "Carter Jarek",
-              "size": 876.8184849634586
+              "name": "Angel Harvey",
+              "size": 1000.2760069099562
             },
             {
-              "name": "Lincoln Treglown",
-              "size": 622.9927142630836
+              "name": "Natalia Higueros",
+              "size": 572.0535983104592
             },
             {
-              "name": "Hunter Neiswander",
-              "size": 319.40181110325614
+              "name": "Maxwell Paola",
+              "size": 360.82720197108154
             },
             {
-              "name": "Eliana Ferenczi",
-              "size": 136.20825128498447
+              "name": "Rylan Vidales",
+              "size": 150.65018835437854
             }
           ]
         },
@@ -35,20 +36,23 @@
           "name": "Product",
           "children": [
             {
-              "name": "Jonah Pipkorn",
-              "size": 1238.9244140749686
+              "fb": "egone",
+              "title": "Director of Product",
+              "photo": "https://www.facebook.com/photo.php?fbid=10154588604180809&set=a.494442720808.261304.525565808&type=3&theater",
+              "name": "Daniel Swarz",
+              "size": 804.5858663497197
             },
             {
-              "name": "Max Ziarnik",
-              "size": 819.0836369236963
+              "name": "Rylan Ginez",
+              "size": 665.7316201175785
             },
             {
-              "name": "Jaden Haitz",
-              "size": 558.8189510681532
+              "name": "Bentley Epifano",
+              "size": 528.509508328889
             },
             {
-              "name": "Mackenzie Mckellips",
-              "size": 230.46145815920835
+              "name": "Samantha Miland",
+              "size": 256.2924015648166
             }
           ]
         },
@@ -56,20 +60,23 @@
           "name": "Ad Sales",
           "children": [
             {
-              "name": "Isaac Mackie",
-              "size": 688.5386011864509
+              "fb": "688221624",
+              "title": "Director of Sales",
+              "photo": "https://www.facebook.com/photo.php?fbid=10151654028851625&set=a.458849106624.235499.688221624&type=3&theater",
+              "name": "David Chang",
+              "size": 760.2061600112359
             },
             {
-              "name": "Addison Sirois",
-              "size": 349.3818265721605
+              "name": "David Nigh",
+              "size": 474.28507479522733
             },
             {
-              "name": "Taylor Ericsson",
-              "size": 231.8496981851516
+              "name": "Nathan Weyrick",
+              "size": 372.0303931970966
             },
             {
-              "name": "David Castleton",
-              "size": 158.93671343077284
+              "name": "William Loffler",
+              "size": 145.91060800129856
             }
           ]
         },
@@ -77,16 +84,16 @@
           "name": "HR",
           "children": [
             {
-              "name": "Eli Keneally",
-              "size": 422.71004835602474
+              "name": "Nathan Fecko",
+              "size": 362.7962185487375
             },
             {
-              "name": "Melissa Vain",
-              "size": 210.48129412546854
+              "name": "Tucker Coltrain",
+              "size": 193.7312241324433
             },
             {
-              "name": "Annabelle Mejia",
-              "size": 173.02651442391505
+              "name": "Brielle Kido",
+              "size": 177.31921785298755
             }
           ]
         }
@@ -99,39 +106,23 @@
           "name": "Engineering",
           "children": [
             {
-              "name": "Jasmine Talaska",
-              "size": 757.079201878322
+              "fb": "keith.peters",
+              "title": "Senior MTS",
+              "photo": "https://www.facebook.com/photo.php?fbid=478856718239&set=a.425296008239.206578.588163239&type=3&theater",
+              "name": "Keith Peters",
+              "size": 804.5224312539079
             },
             {
-              "name": "Eliana Heidger",
-              "size": 659.5068162618131
+              "name": "Addison Bunn",
+              "size": 642.7387044053025
             },
             {
-              "name": "Jace Lazarevic",
-              "size": 561.5343248561041
+              "name": "Adrian Garhart",
+              "size": 460.3933553589254
             },
             {
-              "name": "Kayla Dittmeier",
-              "size": 288.1614700337577
-            }
-          ]
-        },
-        {
-          "name": "Product",
-          "children": [
-            {
-              "title": "Head of Global Technology Partners",
-              "name": "Nan Boden",
-              "fb": "nan.boden.3",
-              "size": 764.5688930839935
-            },
-            {
-              "name": "Cameron Satterlee",
-              "size": 420.5340721850824
-            },
-            {
-              "name": "Julia Yandow",
-              "size": 406.2755186978887
+              "name": "Faith Pelis",
+              "size": 201.96703686325827
             }
           ]
         },
@@ -139,18 +130,39 @@
           "name": "Legal",
           "children": [
             {
-              "title": "Senior Counsel",
-              "name": "Tamara Bedic",
               "fb": "tamara.bedic.7",
-              "size": 401.9140846614989
+              "title": "Senior Counsel",
+              "photo": "https://www.facebook.com/photo.php?fbid=100529223306560&set=a.154092251283590.34421.100000484480494&type=3&theater",
+              "name": "Tamara Bedic",
+              "size": 694.8558109933749
             },
             {
-              "name": "Sarah Wolanin",
-              "size": 326.0732700449124
+              "name": "Wesley Dabu",
+              "size": 602.7174782788106
             },
             {
-              "name": "Emmanuel Heatherly",
-              "size": 217.9050377216747
+              "name": "Eric Malueg",
+              "size": 399.5730869646246
+            }
+          ]
+        },
+        {
+          "name": "Product",
+          "children": [
+            {
+              "fb": "nan.boden.3",
+              "title": "Head of Global Technology Partners",
+              "photo": "https://scontent.xx.fbcdn.net/v/t1.0-1/c0.34.160.160/p160x160/1622684_10200931693849516_1042634274_n.jpg?oh=6936c9c06e66e884c96da0adc36926af&oe=58477F79",
+              "name": "Nan Boden",
+              "size": 491.5472133214273
+            },
+            {
+              "name": "Kaleb Shelbourne",
+              "size": 328.0732845310404
+            },
+            {
+              "name": "Ezra Yeagle",
+              "size": 183.68304024552756
             }
           ]
         }
@@ -163,16 +175,19 @@
           "name": "Engineering",
           "children": [
             {
-              "name": "Delilah Baumer",
-              "size": 571.0373634340497
+              "fb": "rjwalsh3",
+              "title": "Senior Evangelist",
+              "photo": "https://www.facebook.com/photo.php?fbid=10208220799612291&set=a.1514341413100.72410.1071372811&type=3&theater",
+              "name": "Robert Walsh",
+              "size": 790.1498439474605
             },
             {
-              "name": "Adrian Lemle",
-              "size": 371.65243188608
+              "name": "Hadley Lathe",
+              "size": 393.766030762287
             },
             {
-              "name": "Aaron Couper",
-              "size": 274.3626035158223
+              "name": "Gabriela Krajnik",
+              "size": 287.6467858062647
             }
           ]
         },
@@ -180,18 +195,19 @@
           "name": "Product",
           "children": [
             {
-              "title": "Senior Evangelist",
-              "name": "Robert Walsh",
-              "fb": "rjwalsh3",
-              "size": 542.7780868012852
+              "fb": "gould.adrianna",
+              "title": "Product Manager",
+              "photo": "https://www.facebook.com/photo.php?fbid=10207925809076356&set=a.1482888465440.2071825.1030692829&type=3&theater",
+              "name": "Adrianna Gould",
+              "size": 473.06640378102566
             },
             {
-              "name": "Tucker Nicely",
-              "size": 269.0652040402714
+              "name": "Brooklyn Nosbisch",
+              "size": 249.93072907409703
             },
             {
-              "name": "Miles Deible",
-              "size": 237.01791830406734
+              "name": "Giselle Spane",
+              "size": 218.13095472270987
             }
           ]
         },
@@ -199,12 +215,16 @@
           "name": "Research",
           "children": [
             {
-              "name": "Aaliyah Appleyard",
-              "size": 271.08037195155276
+              "name": "Miguel Marinko",
+              "size": 352.54892222266403
             },
             {
-              "name": "Cole Barquero",
-              "size": 205.6895119760774
+              "name": "Lincoln Pepping",
+              "size": 259.31634711486237
+            },
+            {
+              "name": "Patrick Waak",
+              "size": 156.5880260103578
             }
           ]
         }
@@ -217,18 +237,19 @@
           "name": "Watson",
           "children": [
             {
-              "title": "Director",
-              "name": "Rich Skrenta",
               "fb": "skrenta",
-              "size": 315.97465099512254
+              "title": "Director",
+              "photo": "https://www.facebook.com/photo.php?fbid=10152782613176934&set=a.459302176933.248914.500211933&type=3&theater",
+              "name": "Rich Skrenta",
+              "size": 430.8236178252093
             },
             {
-              "name": "Brian Goodfellow",
-              "size": 220.5737740557603
+              "name": "Jose Catalan",
+              "size": 207.48029514024066
             },
             {
-              "name": "Kendall Hoekwater",
-              "size": 170.48929156664158
+              "name": "Silas Holmbeck",
+              "size": 149.7503289880026
             }
           ]
         },
@@ -236,12 +257,12 @@
           "name": "zSeries",
           "children": [
             {
-              "name": "Genesis Dopke",
-              "size": 299.6167024818142
+              "name": "Kaiden McWade",
+              "size": 310.45663693497096
             },
             {
-              "name": "Mia Wielgus",
-              "size": 180.6049886741185
+              "name": "Kingston Conwill",
+              "size": 220.1243015033834
             }
           ]
         },
@@ -249,12 +270,12 @@
           "name": "pSeries",
           "children": [
             {
-              "name": "Mary Sadberry",
-              "size": 156.57595193152056
+              "name": "Lucas Awadalla",
+              "size": 202.185734490766
             },
             {
-              "name": "Kinsley Dolezal",
-              "size": 114.69729015334377
+              "name": "Silas Crush",
+              "size": 117.28157020246266
             }
           ]
         }
@@ -267,14 +288,15 @@
           "name": "Executives",
           "children": [
             {
-              "title": "CTO",
-              "name": "Greg Lindahl",
               "fb": "greg.lindahl",
-              "size": 131.05035393755782
+              "title": "CTO",
+              "photo": "https://www.facebook.com/photo.php?fbid=10153370710981925&set=a.426806721924.210554.589041924&type=3&theater",
+              "name": "Greg Lindahl",
+              "size": 113.79071162994035
             },
             {
-              "name": "Angela Awong",
-              "size": 109.54671701143572
+              "name": "Luis Valentic",
+              "size": 95.33151097509828
             }
           ]
         },
@@ -282,12 +304,12 @@
           "name": "Engineering",
           "children": [
             {
-              "name": "Hunter Jamison",
-              "size": 86.93925843934815
+              "name": "Cameron Hensch",
+              "size": 69.76943140534453
             },
             {
-              "name": "Michelle Tinnin",
-              "size": 77.36552898989063
+              "name": "Sydney Wilmers",
+              "size": 48.46468220825514
             }
           ]
         },
@@ -295,8 +317,8 @@
           "name": "Sales",
           "children": [
             {
-              "name": "Cora Debes",
-              "size": 65.81868928627414
+              "name": "Caroline Broeker",
+              "size": 67.58504458952156
             }
           ]
         }
