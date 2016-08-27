@@ -1,378 +1,306 @@
 {
+  "name": "Friends",
   "children": [
     {
+      "name": "Facebook",
       "children": [
         {
+          "name": "Engineering",
           "children": [
             {
+              "title": "Director",
+              "name": "Bryan O'Sullivan",
               "fb": "bryan.osullivan",
-              "size": 1143.7787501378414,
-              "title": "Director",
-              "name": "Bryan O'Sullivan"
+              "size": 1164.7585470764989
             },
             {
-              "size": 784.0360497853952,
-              "name": "Sean Canini"
+              "name": "Carter Jarek",
+              "size": 876.8184849634586
             },
             {
-              "size": 667.9459479024557,
-              "name": "Aubree Poage"
+              "name": "Lincoln Treglown",
+              "size": 622.9927142630836
             },
             {
-              "size": 308.620292955684,
-              "name": "Nathaniel Erstad"
+              "name": "Hunter Neiswander",
+              "size": 319.40181110325614
+            },
+            {
+              "name": "Eliana Ferenczi",
+              "size": 136.20825128498447
             }
-          ],
-          "name": "Engineering"
+          ]
         },
         {
+          "name": "Product",
           "children": [
             {
-              "size": 1030.2831976252028,
-              "name": "Lucy Mehrer"
+              "name": "Jonah Pipkorn",
+              "size": 1238.9244140749686
             },
             {
-              "size": 779.8788328653552,
-              "name": "Adalynn Siers"
+              "name": "Max Ziarnik",
+              "size": 819.0836369236963
             },
             {
-              "size": 350.34254173685474,
-              "name": "Sebastian Burlew"
+              "name": "Jaden Haitz",
+              "size": 558.8189510681532
             },
             {
-              "size": 240.58661872140598,
-              "name": "Julian Crimmins"
+              "name": "Mackenzie Mckellips",
+              "size": 230.46145815920835
             }
-          ],
-          "name": "Product"
+          ]
         },
         {
+          "name": "Ad Sales",
           "children": [
             {
-              "size": 596.2111106513901,
-              "name": "Penelope Schniers"
+              "name": "Isaac Mackie",
+              "size": 688.5386011864509
             },
             {
-              "size": 516.1027789370418,
-              "name": "Damian Zdroik"
+              "name": "Addison Sirois",
+              "size": 349.3818265721605
             },
             {
-              "size": 369.50650624151876,
-              "name": "Maria Zdrojewski"
+              "name": "Taylor Ericsson",
+              "size": 231.8496981851516
             },
             {
-              "size": 178.4975086604641,
-              "name": "Riley Maseda"
+              "name": "David Castleton",
+              "size": 158.93671343077284
             }
-          ],
-          "name": "Ad Sales"
+          ]
         },
         {
+          "name": "HR",
           "children": [
             {
-              "size": 285.49506735223326,
-              "name": "Cole Alo"
+              "name": "Eli Keneally",
+              "size": 422.71004835602474
             },
             {
-              "size": 310.5217392654454,
-              "name": "Josephine Bozza"
+              "name": "Melissa Vain",
+              "size": 210.48129412546854
             },
             {
-              "size": 156.4087990568581,
-              "name": "James Baasch"
-            },
-            {
-              "size": 98.74668380375513,
-              "name": "Summer Mannen"
+              "name": "Annabelle Mejia",
+              "size": 173.02651442391505
             }
-          ],
-          "name": "HR"
+          ]
         }
-      ],
-      "name": "Facebook"
+      ]
     },
     {
+      "name": "Google",
       "children": [
         {
+          "name": "Engineering",
           "children": [
             {
-              "size": 850.2880735459978,
-              "name": "Jason Radden"
+              "name": "Jasmine Talaska",
+              "size": 757.079201878322
             },
             {
-              "size": 649.8998750129191,
-              "name": "Jesus Ruga"
+              "name": "Eliana Heidger",
+              "size": 659.5068162618131
             },
             {
-              "size": 523.6293015862055,
-              "name": "Eleanor Campsey"
+              "name": "Jace Lazarevic",
+              "size": 561.5343248561041
             },
             {
-              "size": 205.02629877885238,
-              "name": "Kaylee Sonka"
+              "name": "Kayla Dittmeier",
+              "size": 288.1614700337577
             }
-          ],
-          "name": "Engineering"
+          ]
         },
         {
+          "name": "Product",
           "children": [
             {
-              "fb": "nan.boden.3",
-              "size": 536.9275944029439,
               "title": "Head of Global Technology Partners",
-              "name": "Nan Boden"
+              "name": "Nan Boden",
+              "fb": "nan.boden.3",
+              "size": 764.5688930839935
             },
             {
-              "size": 540.5646872273516,
-              "name": "Wesley Hare"
+              "name": "Cameron Satterlee",
+              "size": 420.5340721850824
             },
             {
-              "size": 385.32873108299566,
-              "name": "Ethan Dawalt"
-            },
-            {
-              "size": 141.27637549624245,
-              "name": "Liliana Scarbro"
+              "name": "Julia Yandow",
+              "size": 406.2755186978887
             }
-          ],
-          "name": "Product"
+          ]
         },
         {
+          "name": "Legal",
           "children": [
             {
-              "fb": "tamara.bedic.7",
-              "size": 383.5011218059101,
               "title": "Senior Counsel",
-              "name": "Tamara Bedic"
+              "name": "Tamara Bedic",
+              "fb": "tamara.bedic.7",
+              "size": 401.9140846614989
             },
             {
-              "size": 256.39557632380337,
-              "name": "Riley Duk"
+              "name": "Sarah Wolanin",
+              "size": 326.0732700449124
             },
             {
-              "size": 197.85083758080663,
-              "name": "Adriana Conliffe"
-            },
-            {
-              "size": 111.38165060937828,
-              "name": "Rebecca Tackett"
+              "name": "Emmanuel Heatherly",
+              "size": 217.9050377216747
             }
-          ],
-          "name": "Legal"
+          ]
         }
-      ],
-      "name": "Google"
+      ]
     },
     {
+      "name": "Apple",
       "children": [
         {
+          "name": "Engineering",
           "children": [
             {
-              "size": 665.06627072732,
-              "name": "Aria Akina"
+              "name": "Delilah Baumer",
+              "size": 571.0373634340497
             },
             {
-              "size": 566.7060162457902,
-              "name": "Austin Hauck"
+              "name": "Adrian Lemle",
+              "size": 371.65243188608
             },
             {
-              "size": 230.48806405614297,
-              "name": "Weston Kleypas"
-            },
-            {
-              "size": 170.50347673651038,
-              "name": "Destiny Hammock"
+              "name": "Aaron Couper",
+              "size": 274.3626035158223
             }
-          ],
-          "name": "Engineering"
+          ]
         },
         {
+          "name": "Product",
           "children": [
             {
-              "fb": "rjwalsh3",
-              "size": 402.7722474194952,
               "title": "Senior Evangelist",
-              "name": "Robert Walsh"
+              "name": "Robert Walsh",
+              "fb": "rjwalsh3",
+              "size": 542.7780868012852
             },
             {
-              "size": 348.84598448017107,
-              "name": "Katelyn Wishner"
+              "name": "Tucker Nicely",
+              "size": 269.0652040402714
             },
             {
-              "size": 228.31944461778278,
-              "name": "Mark Hammack"
-            },
-            {
-              "size": 106.99653134376142,
-              "name": "Alice Cromp"
+              "name": "Miles Deible",
+              "size": 237.01791830406734
             }
-          ],
-          "name": "Product"
+          ]
         },
         {
+          "name": "Research",
           "children": [
             {
-              "size": 230.1983862795027,
-              "name": "Maxwell Sangiovanni"
+              "name": "Aaliyah Appleyard",
+              "size": 271.08037195155276
             },
             {
-              "size": 180.48247492240782,
-              "name": "Valerie Pennekamp"
-            },
-            {
-              "size": 154.00447913793033,
-              "name": "Mckenzie Bynum"
-            },
-            {
-              "size": 80.34633419311604,
-              "name": "Silas Franta"
+              "name": "Cole Barquero",
+              "size": 205.6895119760774
             }
-          ],
-          "name": "Research"
+          ]
         }
-      ],
-      "name": "Apple"
+      ]
     },
     {
+      "name": "IBM",
       "children": [
         {
+          "name": "Watson",
           "children": [
             {
-              "fb": "skrenta",
-              "size": 401.68218176946004,
               "title": "Director",
-              "name": "Rich Skrenta"
+              "name": "Rich Skrenta",
+              "fb": "skrenta",
+              "size": 315.97465099512254
             },
             {
-              "size": 219.03483047504554,
-              "name": "Jordan Heelan"
+              "name": "Brian Goodfellow",
+              "size": 220.5737740557603
             },
             {
-              "size": 202.1561035473407,
-              "name": "Jonathan Voehl"
-            },
-            {
-              "size": 106.45297940200827,
-              "name": "Mateo Harker"
+              "name": "Kendall Hoekwater",
+              "size": 170.48929156664158
             }
-          ],
-          "name": "Watson"
+          ]
         },
         {
+          "name": "zSeries",
           "children": [
             {
-              "size": 191.4085860505179,
-              "name": "Kayden Sieh"
+              "name": "Genesis Dopke",
+              "size": 299.6167024818142
             },
             {
-              "size": 198.81262984671517,
-              "name": "Thomas Degenhardt"
-            },
-            {
-              "size": 112.78012495781394,
-              "name": "Kayla Bumb"
-            },
-            {
-              "size": 62.841246313309,
-              "name": "Colton Cascioli"
+              "name": "Mia Wielgus",
+              "size": 180.6049886741185
             }
-          ],
-          "name": "zSeries"
+          ]
         },
         {
+          "name": "pSeries",
           "children": [
             {
-              "size": 165.9905007629395,
-              "name": "Emily Myricks"
+              "name": "Mary Sadberry",
+              "size": 156.57595193152056
             },
             {
-              "size": 89.97967479659926,
-              "name": "Kendall Sproviero"
-            },
-            {
-              "size": 84.42204979667464,
-              "name": "Nevaeh Gugler"
-            },
-            {
-              "size": 34.73749596035103,
-              "name": "Ivy Miks"
+              "name": "Kinsley Dolezal",
+              "size": 114.69729015334377
             }
-          ],
-          "name": "pSeries"
+          ]
         }
-      ],
-      "name": "IBM"
+      ]
     },
     {
+      "name": "blekko",
       "children": [
         {
+          "name": "Executives",
           "children": [
             {
-              "fb": "greg.lindahl",
-              "size": 155.4154774189847,
               "title": "CTO",
-              "name": "Greg Lindahl"
+              "name": "Greg Lindahl",
+              "fb": "greg.lindahl",
+              "size": 131.05035393755782
             },
             {
-              "size": 95.4167396965615,
-              "name": "Mila Granja"
-            },
-            {
-              "size": 71.99511124073851,
-              "name": "Victoria Beeck"
-            },
-            {
-              "size": 36.91445182301053,
-              "name": "Mariah Stanfield"
+              "name": "Angela Awong",
+              "size": 109.54671701143572
             }
-          ],
-          "name": "Executives"
+          ]
         },
         {
+          "name": "Engineering",
           "children": [
             {
-              "size": 101.43279828812358,
-              "name": "Jaden Port"
+              "name": "Hunter Jamison",
+              "size": 86.93925843934815
             },
             {
-              "size": 71.87551392199447,
-              "name": "Elena Mommaerts"
-            },
-            {
-              "size": 35.17497831437845,
-              "name": "Leo Karnas"
-            },
-            {
-              "size": 18.54590228406474,
-              "name": "Camden Banghart"
+              "name": "Michelle Tinnin",
+              "size": 77.36552898989063
             }
-          ],
-          "name": "Engineering"
+          ]
         },
         {
+          "name": "Sales",
           "children": [
             {
-              "size": 51.940463833356496,
-              "name": "Tyler Riely"
-            },
-            {
-              "size": 42.02052051007381,
-              "name": "Caden Fouse"
-            },
-            {
-              "size": 28.97732127025029,
-              "name": "Angel Wardrick"
-            },
-            {
-              "size": 12.508435729303399,
-              "name": "Alexandra Zornes"
+              "name": "Cora Debes",
+              "size": 65.81868928627414
             }
-          ],
-          "name": "Sales"
+          ]
         }
-      ],
-      "name": "blekko"
+      ]
     }
-  ],
-  "name": "Friends"
+  ]
 }

@@ -4,6 +4,7 @@ Generate some fake data in json form for our D3.js visualization
 
 import random
 import json
+import math
 
 distribution = [x**1.5 for x in range(1,6)]
 distribution.reverse()
@@ -100,7 +101,10 @@ for c in company_list:
         d_size = department_d.pop(0)
         people_d = distribution[:]
         j3 = []
-        for p in range(1,5):
+        num_friends = d_size * c_size * random.uniform(0.75, 1.25) # 121 += 25%
+        num_friends = num_friends / 121.0 / 1.25 # now 0-1
+        num_friends = int(math.sqrt(num_friends) * 4.5) + 2
+        for p in range(1,num_friends):
             p_size = people_d.pop(0)
             person = get_person(c, d)
             size = p_size * d_size * c_size * random.uniform(0.75, 1.25)
