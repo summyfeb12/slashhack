@@ -1,0 +1,50 @@
+
+
+body {
+	background-image: url("img/bk.png");
+	background-size: 100vw;
+	background-repeat: no-repeat;
+}
+
+.nav {
+	padding: 2rem 0 0 45%;
+	/*background-color: #fff;*/
+}
+
+.info {
+	margin-top: 4rem;
+	padding: 6rem;
+}
+.main {
+	height: 100vh;
+	width: 100vw;	
+}
+
+.logo {
+	width: 4rem;
+    height: 4rem;
+    position: relative;
+}
+.logo-tag {
+	display: inline;
+    font-size: 2rem;
+    padding: 1rem;
+    color: #fff;
+}
+.headline {
+	font-family: 'Lato', sans-serif;
+	font-size: 4rem;
+	color: #fff;
+}
+
+.motto {
+	font-family: 'Raleway', sans-serif;
+	font-size: 1.4rem;
+	color: #ccc;
+}
+
+.btn {
+	font-size: 1.3rem;
+	font-family: 'Lato', sans-serif;
+}
+
