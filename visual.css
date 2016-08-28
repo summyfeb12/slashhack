@@ -3,13 +3,16 @@ body{
 }
 .main_body {
 	height: 100%;
+	background-color: white;
 }
 
 .nav {
 	background-color: #3b5998;
 	padding: 1rem 2rem;
 }
-
+.diagram{
+	margin-left: 320px;
+}
 .user-info {
 	float: right;
 	display: inline-block;
@@ -33,10 +36,12 @@ body{
   cursor: pointer;
 }
 img{
-  border-radius: 50%;
-  width:100px;
-  height:100px;
-  align-items: center;
+ display: block;
+ max-width:230px;
+ max-height:95px;
+ width: auto;
+ height: auto;
+ border-radius: 50%;
 }
 a {
     text-decoration: none !important;

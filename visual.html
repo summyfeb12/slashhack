@@ -40,23 +40,23 @@
 				</p>
 				<img src="img/greg.jpg" class="img-rounded">
 			</div>
-			
+
 		</nav>
 		<div class="diagram">
-			
+
 		</div>
 	</div>
 <script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
-var margin = 20,
-    diameter = 960;
+var margin = 40,
+    diameter = 800;
 
 var color = d3.scale.linear()
     .domain([-1, 5])
     .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
     .interpolate(d3.interpolateHcl);
-
+var color2 = d3.scale.category20c();
 var pack = d3.layout.pack()
     .padding(2)
     .size([diameter - margin, diameter - margin])
@@ -65,6 +65,7 @@ var pack = d3.layout.pack()
 var svg = d3.select(".diagram").append("svg")
     .attr("width", diameter)
     .attr("height", diameter)
+		.attr("align","center")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
@@ -79,7 +80,7 @@ d3.json("data/friends.json", function(error, root) {
       .data(nodes)
     .enter().append("circle")
       .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
+      .style("fill", function(d) { return d.children ? color2(d.name) : null; })
       .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
 
   var text = svg.selectAll("text")
