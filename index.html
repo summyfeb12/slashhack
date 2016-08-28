@@ -5,7 +5,9 @@
 .node {
   cursor: pointer;
 }
-
+a {
+    text-decoration: none !important;
+}
 .node:hover {
   stroke: #000;
   stroke-width: 1.5px;
@@ -73,6 +75,8 @@ d3.json("data/friends.json", function(error, root) {
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
       .attr("width", 200)
       .attr("height", 50)
+      .attr("x",-50)
+      .attr("y",-50)
       .append("xhtml:body")
       .html(function(d) {
         var textsize = '+0';
