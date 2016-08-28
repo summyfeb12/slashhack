@@ -76,7 +76,10 @@ d3.json("data/friends.json", function(error, root) {
       .attr("height", 50)
       .append("xhtml:body")
       .html(function(d) {
-        ret = d.name;
+        var textsize = '+0';
+        textsize = d === root ? '+4' : textsize;
+        textsize = d.parent === root ? '+2' : textsize;
+        var ret = '<font size="' + textsize + '">' + d.name + '</font>';
         ret += d.title ? '<br>' + d.title : '';
         return ret;
       });
