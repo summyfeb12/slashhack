@@ -5,7 +5,15 @@
 .node {
   cursor: pointer;
 }
-
+img{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  align-items: center;
+}
+a {
+    text-decoration: none !important;
+}
 .node:hover {
   stroke: #000;
   stroke-width: 1.5px;
@@ -21,7 +29,6 @@
   text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
 }
 
-.label,
 .node--root,
 .node--leaf {
   pointer-events: none;
@@ -29,8 +36,7 @@
 
 </style>
 <body>
-<h1> Hey - Oh</h1>
-<script src="//d3js.org/d3.v4.min.js"></script>
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script>
 
 var margin = 20,
@@ -52,13 +58,13 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("flare.json", function(error, root) {
+d3.json("data/friends.json", function(error, root) {
   if (error) throw error;
 
   var focus = root,
       nodes = pack.nodes(root),
       view;
-
+  //console.log(nodes);
   var circle = svg.selectAll("circle")
       .data(nodes)
     .enter().append("circle")
@@ -68,13 +74,31 @@ d3.json("flare.json", function(error, root) {
 
   var text = svg.selectAll("text")
       .data(nodes)
-    .enter().append("text")
+    .enter()
+    .append("foreignObject")
       .attr("class", "label")
       .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
-      .text(function(d) { return d.name; });
+      .attr("width", 200)
+      .attr("height", 50)
+      .attr("x",-50)
+      .append("xhtml:body")
+      .html(function(d) {
+        if(!d.children && d.photo)
+         var im='<img src='+d.photo+'>';
+        else {
+          var im="";
+        }
+        var textsize = '+0';
+        textsize = d.parent === root ? '+3' : textsize;
+        textsize = d.parent ? d.parent.parent === root ? '+2' : textsize : textsize;
+        fblink = d.fb?d.fb:"#";
+        var ret = '<a href=http://www.facebook.com/'+fblink+'>'+'<font size="' + textsize + '">' + d.name + '</font></a>';
+        ret += d.title ? '<br>' + d.title : '';
+        return im+'<br>'+ret;
+      });
 
-  var node = svg.selectAll("circle,text");
+  var node = svg.selectAll("circle,foreignObject");
 
   d3.select("body")
       .style("background", color(-1))
@@ -92,11 +116,11 @@ d3.json("flare.json", function(error, root) {
           return function(t) { zoomTo(i(t)); };
         });
 
-    transition.selectAll("text")
+    transition.selectAll("foreignObject")
       .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
         .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
-        .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
-        .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
+        .each("start", function(d) { if (d.parent !== focus) this.style.display = "none"; })
+        .each("end", function(d) { if (d.parent === focus) this.style.display = "inline"; });
   }
 
   function zoomTo(v) {
