@@ -51,13 +51,13 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
 
-d3.json("flares.json", function(error, root) {
+d3.json("data/friends.json", function(error, root) {
   if (error) throw error;
 
   var focus = root,
       nodes = pack.nodes(root),
       view;
-  console.log(nodes);
+  //console.log(nodes);
   var circle = svg.selectAll("circle")
       .data(nodes)
     .enter().append("circle")
@@ -68,14 +68,20 @@ d3.json("flares.json", function(error, root) {
   var text = svg.selectAll("text")
       .data(nodes)
     .enter()
-    .append("text")
+    .append("foreignObject")
       .attr("class", "label")
       .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
-      .text(function(d) { return d.name; });
+      .attr("width", 200)
+      .attr("height", 50)
+      .append("xhtml:body")
+      .html(function(d) {
+        ret = d.name;
+        ret += d.title ? '<br>' + d.title : '';
+        return ret;
+      });
 
-
-  var node = svg.selectAll("circle,text");
+  var node = svg.selectAll("circle,foreignObject");
 
   d3.select("body")
       .style("background", color(-1))
@@ -93,7 +99,7 @@ d3.json("flares.json", function(error, root) {
           return function(t) { zoomTo(i(t)); };
         });
 
-    transition.selectAll("text")
+    transition.selectAll("foreignObject")
       .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
         .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
         .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
