@@ -1,111 +1,55 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<style>
 
-.node {
-  cursor: pointer;
-}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="description" content="VizWorld visualizes the people you work and easily connects you with them.">
+	<meta name="keywords" content="vizWorld">
+	<meta name="author" content="VizWorld team: Sunmath, Greg, Olu">
+	
+	<title>VizWorld: Visualize your world</title>
 
-.node:hover {
-  stroke: #000;
-  stroke-width: 1.5px;
-}
 
-.node--leaf {
-  fill: white;
-}
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
+	<!-- /end Bootstrap CSS-->
 
-.label {
-  font: 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
-  text-anchor: middle;
-  text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-}
+	<!-- CSS for this page -->
+	<link rel="stylesheet" type="text/css" href="home.css">
+	<!-- /end -->
 
-.label,
-.node--root,
-.node--leaf {
-  pointer-events: none;
-}
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lato|Miriam+Libre:700|Raleway:300i" rel="stylesheet">
+	<!-- /end Google fonts -->
 
-</style>
+</head>
 <body>
-<h1> Hey - Oh</h1>
-<script src="//d3js.org/d3.v4.min.js"></script>
-<script>
+	<div class="main">
+		<div class="main-logo">
+			<img src="img/logo.jpg">
+		</div>
+		<!--<nav class="nav">
+			<img src="img/sample.png" class="logo"><p class="logo-tag">VizWorld</p>
+		</nav>-->
+		<div class="info">
+			<div class="hd-bk">
+				<h2 class="headline">Facebook Connections</h2>
+			</div>
+			<div class="mt-bk">
+				<p class="motto">There are tons of friends at your workspace that are yet to be discovered. Find and make new work friends now.</p>
+			</div>
+			<a href="visual.html" role="button" class="btn btn-primary animsition-link">Continue with Facebook</a>
+		</div>
+	</div>
 
-var margin = 20,
-    diameter = 960;
+	<!-- Jquery, Tether, Bootstrap JS, animsition.js -->
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+    <!-- /end Jquery, Tether, Bootstrap JS -->
 
-var color = d3.scale.linear()
-    .domain([-1, 5])
-    .range(["hsl(152,80%,80%)", "hsl(228,30%,40%)"])
-    .interpolate(d3.interpolateHcl);
-
-var pack = d3.layout.pack()
-    .padding(2)
-    .size([diameter - margin, diameter - margin])
-    .value(function(d) { return d.size; })
-
-var svg = d3.select("body").append("svg")
-    .attr("width", diameter)
-    .attr("height", diameter)
-  .append("g")
-    .attr("transform", "translate(" + diameter / 2 + "," + diameter / 2 + ")");
-
-d3.json("flare.json", function(error, root) {
-  if (error) throw error;
-
-  var focus = root,
-      nodes = pack.nodes(root),
-      view;
-
-  var circle = svg.selectAll("circle")
-      .data(nodes)
-    .enter().append("circle")
-      .attr("class", function(d) { return d.parent ? d.children ? "node" : "node node--leaf" : "node node--root"; })
-      .style("fill", function(d) { return d.children ? color(d.depth) : null; })
-      .on("click", function(d) { if (focus !== d) zoom(d), d3.event.stopPropagation(); });
-
-  var text = svg.selectAll("text")
-      .data(nodes)
-    .enter().append("text")
-      .attr("class", "label")
-      .style("fill-opacity", function(d) { return d.parent === root ? 1 : 0; })
-      .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
-      .text(function(d) { return d.name; });
-
-  var node = svg.selectAll("circle,text");
-
-  d3.select("body")
-      .style("background", color(-1))
-      .on("click", function() { zoom(root); });
-
-  zoomTo([root.x, root.y, root.r * 2 + margin]);
-
-  function zoom(d) {
-    var focus0 = focus; focus = d;
-
-    var transition = d3.transition()
-        .duration(d3.event.altKey ? 7500 : 750)
-        .tween("zoom", function(d) {
-          var i = d3.interpolateZoom(view, [focus.x, focus.y, focus.r * 2 + margin]);
-          return function(t) { zoomTo(i(t)); };
-        });
-
-    transition.selectAll("text")
-      .filter(function(d) { return d.parent === focus || this.style.display === "inline"; })
-        .style("fill-opacity", function(d) { return d.parent === focus ? 1 : 0; })
-        .each("start", function(d) { if (d.parent === focus) this.style.display = "inline"; })
-        .each("end", function(d) { if (d.parent !== focus) this.style.display = "none"; });
-  }
-
-  function zoomTo(v) {
-    var k = diameter / v[2]; view = v;
-    node.attr("transform", function(d) { return "translate(" + (d.x - v[0]) * k + "," + (d.y - v[1]) * k + ")"; });
-    circle.attr("r", function(d) { return d.r * k; });
-  }
-});
-
-d3.select(self.frameElement).style("height", diameter + "px");
-
-</script>
+    
+</body>
+</html>
