@@ -35,7 +35,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                          'name': 'Bryan O\'Sullivan',
                                          'title': 'Director',
                                          'fb': 'bryan.osullivan',
-                                         'photo': 'https://www.facebook.com/photo.php?fbid=10153210826061094&set=a.440993296093.224463.645786093&type=3&theater',
+                                         'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/12140690_10153210826061094_4587702233746558384_n.jpg?oh=8bec31684643d1575827b94b78c77a39&oe=58443117',
                                      },
                                  ],
                                  'Product':
@@ -44,7 +44,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                          'name': 'Daniel Swarz',
                                          'title': 'Director of Product', 
                                          'fb': 'egone',
-                                         'photo': 'https://www.facebook.com/photo.php?fbid=10154588604180809&set=a.494442720808.261304.525565808&type=3&theater',
+                                         'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/14100301_10154588604180809_2613854826243197204_n.jpg?oh=967fbf15b62cf0c2137cc1736a42051b&oe=5838F00F',
                                      },
                                  ],
                                  'Ad Sales':
@@ -53,7 +53,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                          'name': 'David Chang',
                                          'title': 'Director of Sales', 
                                          'fb': '688221624',
-                                         'photo': 'https://www.facebook.com/photo.php?fbid=10151654028851625&set=a.458849106624.235499.688221624&type=3&theater'
+                                         'photo': 'https://scontent.xx.fbcdn.net/v/l/t1.0-9/1384057_10151654028851625_1082069571_n.jpg?oh=deb7f26210f906ea592c9130f45f5ce3&oe=583B122B',
                                      },
                                  ],
                                },
@@ -63,7 +63,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                        'name': 'Keith Peters',
                                        'title': 'Senior MTS', 
                                        'fb': 'keith.peters',
-                                       'photo': 'https://www.facebook.com/photo.php?fbid=478856718239&set=a.425296008239.206578.588163239&type=3&theater',
+                                       'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/166850_478856718239_26766_n.jpg?oh=35f4f581b9cd9975d6cdfcca0ecf1ae2&oe=585A8C15',
                                    },
                                ],
                                'Legal':
@@ -72,7 +72,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                        'name': 'Tamara Bedic',
                                        'title': 'Senior Counsel',
                                        'fb': 'tamara.bedic.7',
-                                       'photo': 'https://www.facebook.com/photo.php?fbid=100529223306560&set=a.154092251283590.34421.100000484480494&type=3&theater',
+                                       'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/1916459_100529223306560_1995663_n.jpg?oh=e9d3cbca8f91abda66ab2ce2addc9e3e&oe=58492397',
                                    },
                                ],
                                'Product':
@@ -91,7 +91,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                     'name': 'Rich Skrenta',
                                     'title': 'Director',
                                     'fb': 'skrenta',
-                                    'photo': 'https://www.facebook.com/photo.php?fbid=10152782613176934&set=a.459302176933.248914.500211933&type=3&theater',
+                                    'photo': 'https://scontent.xx.fbcdn.net/t31.0-8/10669235_10152782613176934_4156726262375851453_o.jpg',
                                 },
                             ],
                           },
@@ -101,7 +101,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                        'name': 'Greg Lindahl',
                                        'title': 'CTO',
                                        'fb': 'greg.lindahl',
-                                       'photo': 'https://www.facebook.com/photo.php?fbid=10153370710981925&set=a.426806721924.210554.589041924&type=3&theater'
+                                       'photo': 'https://scontent.xx.fbcdn.net/t31.0-8/12239386_10153370710981925_4214944586379720169_o.jpg',
                                    },
                                ],
                              },
@@ -111,7 +111,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                       'name': 'Robert Walsh',
                                       'title': 'Senior Evangelist',
                                       'fb': 'rjwalsh3',
-                                      'photo': 'https://www.facebook.com/photo.php?fbid=10208220799612291&set=a.1514341413100.72410.1071372811&type=3&theater',
+                                      'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/13873074_10208220799612291_2535004613615237585_n.jpg?oh=49c7a78d93bddaff787948129d4bcd69&oe=58595F56',
                                   },
                               ],
                               'Product':
@@ -120,7 +120,7 @@ actual_friends = { 'Facebook': { 'Engineering':
                                       'name': 'Adrianna Gould',
                                       'title': 'Product Manager',
                                       'fb': 'gould.adrianna',
-                                      'photo': 'https://www.facebook.com/photo.php?fbid=10207925809076356&set=a.1482888465440.2071825.1030692829&type=3&theater',
+                                      'photo': 'https://scontent.xx.fbcdn.net/v/t1.0-9/13912419_10207925809076356_953239921339769129_n.jpg?oh=79c9dadb0990c1d6c58eb233848c7ae5&oe=58411105',
                                   },
                               ],
                             }
