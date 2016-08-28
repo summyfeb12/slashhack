@@ -1,23 +1,31 @@
 
 
 body {
-	background-image: url("img/bk.png");
+	height: 100vh;
 	background-size: 100vw;
-	background-repeat: no-repeat;
+	background-color: #fff;
 }
 
 .nav {
 	padding: 2rem 0 0 45%;
 	/*background-color: #fff;*/
 }
+.btn-primary {
+    color: #fff;
+    background-color: #3b5998;
+    border-color: #3b5998;
+}
+
+.main {
+	position: absolute;
+	top: -7rem;
+}
+.main-logo {
+	height: 70vh;
+}
 
 .info {
-	margin-top: 4rem;
-	padding: 6rem;
-}
-.main {
-	height: 100vh;
-	width: 100vw;	
+	padding: 6rem 0 0 4rem ;
 }
 
 .logo {
@@ -34,13 +42,14 @@ body {
 .headline {
 	font-family: 'Lato', sans-serif;
 	font-size: 4rem;
-	color: #fff;
+	color: #1E102A;
+	position: relative;
 }
 
 .motto {
 	font-family: 'Raleway', sans-serif;
 	font-size: 1.4rem;
-	color: #ccc;
+	color: #180E05;
 }
 
 .btn {
