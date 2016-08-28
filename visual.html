@@ -91,7 +91,8 @@ d3.json("data/friends.json", function(error, root) {
       .style("display", function(d) { return d.parent === root ? "inline" : "none"; })
       .attr("width", 200)
       .attr("height", 50)
-      .attr("x",-50)
+      .attr("x",-40)
+      .attr("y",-40)
       .append("xhtml:body")
       .html(function(d) {
         if(!d.children && d.photo)
