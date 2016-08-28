@@ -5,6 +5,12 @@
 .node {
   cursor: pointer;
 }
+img{
+  border-radius: 50%;
+  width:100px;
+  height:100px;
+  align-items: center;
+}
 a {
     text-decoration: none !important;
 }
@@ -76,16 +82,20 @@ d3.json("data/friends.json", function(error, root) {
       .attr("width", 200)
       .attr("height", 50)
       .attr("x",-50)
-      .attr("y",-50)
       .append("xhtml:body")
       .html(function(d) {
+        if(!d.children && d.photo)
+         var im='<img src='+d.photo+'>';
+        else {
+          var im="";
+        }
         var textsize = '+0';
         textsize = d.parent === root ? '+3' : textsize;
         textsize = d.parent ? d.parent.parent === root ? '+2' : textsize : textsize;
         fblink = d.fb?d.fb:"#";
         var ret = '<a href=http://www.facebook.com/'+fblink+'>'+'<font size="' + textsize + '">' + d.name + '</font></a>';
         ret += d.title ? '<br>' + d.title : '';
-        return ret;
+        return im+'<br>'+ret;
       });
 
   var node = svg.selectAll("circle,foreignObject");
